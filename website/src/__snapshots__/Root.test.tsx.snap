@@ -1414,16 +1414,16 @@ Array [
         target="_blank"
       >
         <svg
-          className="sc-jbKcbu csVwEE"
+          className="sc-jbKcbu dDcuja"
           fill="currentColor"
-          height={18}
+          height={15}
           style={
             Object {
-              "marginRight": 14.4,
+              "marginRight": 12,
             }
           }
           viewBox="0 0 10 10"
-          width={18}
+          width={15}
         >
           <polygon
             points="5,0 0,10 10,10"

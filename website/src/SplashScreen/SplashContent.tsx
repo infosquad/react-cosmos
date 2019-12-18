@@ -81,7 +81,7 @@ export function SplashContent({ windowViewport, gitHubStars }: Props) {
           transform: `scale(${gitHubStars === null ? 0.8 : 1})`
         }}
       >
-        <UpArrow size={Math.round(starSize * 0.8)} />
+        <UpArrow size={Math.round(starSize * 0.7)} />
         Live on Product Hunt
       </PhButton>
     </Container>
@@ -258,5 +258,5 @@ const UpArrow = ({ size }: UpArrowProps) => {
 
 const StyledSvg = styled.svg`
   flex-shrink: 0;
-  transform: translate(0, 10%);
+  transform: translate(0, 12%);
 `;
