@@ -20,6 +20,7 @@ type FullScreenHeaderSizes = {
   starStrokeWidth: number;
   starLeftMargin: number;
   starRightMargin: number;
+  borderWidth: number;
 };
 
 export function SplashContent({ windowViewport, gitHubStars }: Props) {
@@ -34,9 +35,11 @@ export function SplashContent({ windowViewport, gitHubStars }: Props) {
     starSize,
     starStrokeWidth,
     starLeftMargin,
-    starRightMargin
+    starRightMargin,
+    borderWidth
   } = getFullScreenHeaderSizes(windowViewport);
 
+  const phPadding = ctaPadding - 2 * borderWidth;
   return (
     <Container style={containerStyle}>
       <Title style={{ fontSize: titleFontSize }}>
@@ -66,6 +69,21 @@ export function SplashContent({ windowViewport, gitHubStars }: Props) {
         />
         {gitHubStars}
       </CallToAction>
+      <PhButton
+        href="https://www.producthunt.com/posts/react-cosmos-5"
+        style={{
+          marginTop: ctaHeight / 2,
+          padding: `0 ${phPadding}px 0 ${phPadding}px`,
+          borderWidth,
+          fontSize: ctaFontSize,
+          lineHeight: `${ctaHeight - 2 * borderWidth}px`,
+          opacity: gitHubStars === null ? 0 : 1,
+          transform: `scale(${gitHubStars === null ? 0.8 : 1})`
+        }}
+      >
+        <UpArrow size={Math.round(starSize * 0.8)} />
+        Live on Product Hunt
+      </PhButton>
     </Container>
   );
 }
@@ -79,6 +97,7 @@ function getFullScreenHeaderSizes(
   const subtitleFontSize = 10 + fontOffset;
   const ctaFontSize = 10 + fontOffset;
   const ctaHeight = Math.round(ctaFontSize * 2.3);
+  const borderWidth = Math.ceil(cosmonautSize / 300);
 
   return {
     titleFontSize,
@@ -90,7 +109,8 @@ function getFullScreenHeaderSizes(
     starSize: Math.round(subtitleFontSize * 0.75),
     starStrokeWidth: Math.max(2, Math.ceil(subtitleFontSize / 30)),
     starLeftMargin: Math.round(subtitleFontSize / 2),
-    starRightMargin: Math.round(subtitleFontSize / 10)
+    starRightMargin: Math.round(subtitleFontSize / 10),
+    borderWidth
   };
 }
 
@@ -168,6 +188,22 @@ const CallToAction = styled(ExternalLink)`
   }
 `;
 
+const PhButton = styled(ExternalLink)`
+  background: rgb(9, 53, 86, 0.8);
+  border: 1px solid #b1dcfd;
+  color: #b1dcfd;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  transition: ${slideInTransition};
+
+  strong {
+    font-weight: 500;
+  }
+`;
+
 type StarProps = {
   size: number;
   strokeWidth: number;
@@ -198,4 +234,29 @@ const Star = ({ size, strokeWidth, leftMargin, rightMargin }: StarProps) => {
 
 const StyledStar = styled.svg`
   transform: translate(0, 3%);
+`;
+
+type UpArrowProps = {
+  size: number;
+};
+
+const UpArrow = ({ size }: UpArrowProps) => {
+  return (
+    <StyledSvg
+      width={size}
+      height={size}
+      viewBox="0 0 10 10"
+      fill="currentColor"
+      style={{
+        marginRight: size * 0.8
+      }}
+    >
+      <polygon points="5,0 0,10 10,10" />
+    </StyledSvg>
+  );
+};
+
+const StyledSvg = styled.svg`
+  flex-shrink: 0;
+  transform: translate(0, 10%);
 `;

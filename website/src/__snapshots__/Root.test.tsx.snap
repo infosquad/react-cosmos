@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 Array [
   <div
-    className="sc-hqyNC BXKaP"
+    className="sc-dNLxif MbWOO"
     id="splash-screen"
     style={
       Object {
@@ -12,7 +12,7 @@ Array [
     }
   >
     <div
-      className="sc-jbKcbu bRAqXt"
+      className="sc-jqCOkK fZBhoS"
     >
       <svg
         className="sc-cHGsZl fFFzBK"
@@ -1375,7 +1375,7 @@ Array [
           GitHub
         </strong>
         <svg
-          className="sc-kvZOFW gYCEaJ"
+          className="sc-hqyNC iHYXFP"
           fill="none"
           height={22}
           stroke="currentColor"
@@ -1395,6 +1395,41 @@ Array [
             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
           />
         </svg>
+      </a>
+      <a
+        className="sc-kvZOFW dxwHge"
+        href="https://www.producthunt.com/posts/react-cosmos-5"
+        rel="noopener noreferrer"
+        style={
+          Object {
+            "borderWidth": 2,
+            "fontSize": 29,
+            "lineHeight": "63px",
+            "marginTop": 33.5,
+            "opacity": 0,
+            "padding": "0 25px 0 25px",
+            "transform": "scale(0.8)",
+          }
+        }
+        target="_blank"
+      >
+        <svg
+          className="sc-jbKcbu csVwEE"
+          fill="currentColor"
+          height={18}
+          style={
+            Object {
+              "marginRight": 14.4,
+            }
+          }
+          viewBox="0 0 10 10"
+          width={18}
+        >
+          <polygon
+            points="5,0 0,10 10,10"
+          />
+        </svg>
+        Live on Product Hunt
       </a>
     </div>
     <svg
@@ -1423,11 +1458,11 @@ Array [
     </svg>
   </div>,
   <div
-    className="sc-cIShpX cvrapw"
+    className="sc-feJyhm jEjcQp"
     id="gradient1"
   >
     <div
-      className="sc-dNLxif fzKbOs"
+      className="sc-uJMKN jzLgwU"
       style={
         Object {
           "opacity": 0,
@@ -1437,22 +1472,22 @@ Array [
       }
     >
       <div
-        className="sc-jqCOkK dSsYOL"
+        className="sc-bbmXgH dCFmrB"
       >
         <div
-          className="sc-uJMKN egYXHq"
+          className="sc-gGBfsJ fAGkbX"
         >
           <a
-            className="sc-bbmXgH efkFbs"
+            className="sc-jnlKLf dcuctc"
             href="/"
             onClick={[Function]}
           />
         </div>
         <div
-          className="sc-jnlKLf kutTnP"
+          className="sc-tilXH dFwOzf"
         >
           <h1
-            className="sc-fYxtnH bKBPMe"
+            className="sc-hEsumM esCilA"
           >
             <a
               href="/"
@@ -1462,10 +1497,10 @@ Array [
             </a>
           </h1>
           <div
-            className="sc-tilXH krrXQb"
+            className="sc-ktHwxA cdOLjc"
           >
             <a
-              className="sc-hEsumM eAimvk"
+              className="sc-cIShpX kKojpy"
               href="https://github.com/react-cosmos/react-cosmos"
               rel="noopener noreferrer"
               target="_blank"
@@ -1473,12 +1508,12 @@ Array [
               GitHub
             </a>
             <span
-              className="sc-ktHwxA ecQZsU"
+              className="sc-kafWEX bKpQMy"
             >
               /
             </span>
             <a
-              className="sc-hEsumM eAimvk"
+              className="sc-cIShpX kKojpy"
               href="https://join-react-cosmos.now.sh"
               rel="noopener noreferrer"
               target="_blank"
@@ -1486,12 +1521,12 @@ Array [
               Slack
             </a>
             <span
-              className="sc-ktHwxA ecQZsU"
+              className="sc-kafWEX bKpQMy"
             >
               /
             </span>
             <a
-              className="sc-hEsumM eAimvk"
+              className="sc-cIShpX kKojpy"
               href="https://twitter.com/ReactCosmos"
               rel="noopener noreferrer"
               target="_blank"
@@ -1501,7 +1536,7 @@ Array [
           </div>
         </div>
         <a
-          className="sc-gGBfsJ fnWmwR"
+          className="sc-fYxtnH kQTxOY"
           href="/about"
           onClick={[Function]}
         >
@@ -2021,7 +2056,7 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-kafWEX kKpMbN"
+    className="sc-iELTvK jLLbvK"
   >
     <div
       className="sc-cvbbAY csLNkW"
